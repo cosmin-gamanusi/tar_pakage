@@ -1,0 +1,24 @@
+// Exista comentarii si in cod.
+Cerinta 0:
+    In main citesc input-ul intr-un buffer, verific daca inputul este diferite "exit", iar apoi apelez functia strtok pentru a
+     "sparge" input-ul si a-l introduce in vectorul de stringuri "vectorParametrii". Aflu ce comanda a fost data, iar in functie
+      de aceasta, apelez functia respectiva. La final, resetez vectorul de parametrii si citesc o noua comanda.
+
+Cerinta 1:
+    Folosesc memset pentru a-mi pregati structura, deschid fidierul files.txt, verific deschiderea, deschid fisierul usermap.txt,
+     verific descrierea, deschid fisierul de scriere din vectorul de parametrii pe care il trimit prin parametrii functiei. Cat timp
+      pot sa citesc din fisier, citesc liniile intregi, iar apoi le sparg prin acelasi procedei, dar in vectorul vectorBreakLine.
+       Imi selectez din vectorBreakLine ce am nevoie si completez in structura. Dupa completarea structurii, deschid fiserul 
+       respectriv liniei, citesc si informatile necesare stocate in usermap.txt, citesc caracter cu caracter din fisierul efectiv
+        (prin concatenarea numelui la parametrul din input) si scriu in arhiva. La final inchid fisierele. 
+
+Cerinta 2:
+    Deschid fisierele necesare si citesc din fisier intr-un buffer. Citesc numele prima data, repozitionez cursorul astfel incat sa
+     "pice" pe size, citesc size-ul si calculez urmatoarea pozitie a cursorului pentru ca acesta sa sara pana la urmatorul "name". 
+     Variabila jummp stocheaza un multiplu de 512, mai mare ca size deoarece atatea block-uri de 512 am in arhiva. ( deoarce am
+      completat cu 0 la punctul anterior pentru a avea block-uri de 512)
+
+Cerinta 3:
+    Folosesc acelsi principiu de la Cerinta 2, dar verific daca numele citit corespunde cu cel din paramtru. Daca nu, sar pana la
+     urmatorul nume, daca da, sar headerul si ma pozitionez la inceputul arhivei, dupa header. Citesc seturi de 512 + restul de
+      bytes unde este nevoie. Toate sunt scrie in fisierul dorit. La final inchid fisierle.

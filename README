@@ -1,3 +1,9 @@
+Proiect personal ce folose te limbajul de programare C ș și simulează utilitarul de arhivare-dezarhivare
+al sistemului de operare "Linux".
+
+
+
+
 // Exista comentarii si in cod.
 Cerinta 0:
     In main citesc input-ul intr-un buffer, verific daca inputul este diferite "exit", iar apoi apelez functia strtok pentru a
